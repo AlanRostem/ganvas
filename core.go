@@ -47,6 +47,8 @@ func Start(opt *Options) {
 
 	window.MakeContextCurrent()
 
+	_graphicsStates.init()
+
 	for !window.ShouldClose() {
 		// Do OpenGL stuff.
 		gl.UseProgram(prg)
